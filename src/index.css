@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-orange-500: #FF6600;
+  --color-brand-orange-600: #E65C00;
+}
+
+body {
+  margin: 0;
+  background-color: #F8FAFC !important;
+  color: #334155 !important;
+  font-family: 'Inter', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 🟢 GEOMETRIC BALANCE THEME OVERRIDES 🟢 */
+
+/* Force all general layout backgrounds to elegant offwhite */
+.min-h-screen {
+  background-color: #F8FAFC !important;
+  color: #334155 !important;
+}
+
+/* Header & Banner Styles */
+header {
+  background-color: #FFFFFF !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+header span, header p, header div {
+  color: #334155;
+}
+header .text-white {
+  color: #0F172A !important;
+}
+
+/* Logo block styling alignment */
+.bg-gradient-to-tr.from-amber-500 {
+  background: linear-gradient(135deg, #FF6600 0%, #EA580C 100%) !important;
+  color: #FFFFFF !important;
+}
+
+/* Progress Step Bars & Status Colors */
+.progress-step-active, .bg-amber-500 {
+  background-color: #FF6600 !important; /* Safety brand orange */
+  color: #FFFFFF !important;
+}
+.text-amber-550, .text-amber-500, .text-amber-450, .text-amber-400 {
+  color: #EA580C !important;
+}
+.border-amber-500\/30, .border-amber-450\/20, .border-amber-450\/40 {
+  border-color: rgba(255, 102, 0, 0.25) !important;
+}
+.bg-amber-500\/5, .bg-amber-500\/10, .bg-amber-500\/15 {
+  background-color: rgba(255, 102, 0, 0.05) !important;
+}
+
+/* Progress Status bar Completed */
+.bg-emerald-500 {
+  background-color: #10B981 !important;
+}
+.text-emerald-400 {
+  color: #059669 !important;
+}
+
+/* Tabs & Toggle Indicators */
+section.bg-slate-955 {
+  background-color: #F1F5F9 !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+.bg-slate-950, .bg-slate-950\/80 {
+  background-color: #FFFFFF !important;
+}
+
+/* Toggle Tabs style */
+.bg-slate-950.border.border-slate-900 {
+  background-color: #E2E8F0 !important;
+  border-color: #CBD5E1 !important;
+}
+
+/* Custom Tab styling */
+#btn_tab_form, #btn_tab_preview {
+  font-family: 'Inter', sans-serif !important;
+}
+.bg-gradient-to-r.from-amber-500\/10 {
+  background: #FFFFFF !important;
+  color: #FF6600 !important;
+  border: 1px solid rgba(255,102,0,0.3) !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+}
+#btn_tab_form:not(.bg-gradient-to-r), #btn_tab_preview:not(.bg-gradient-to-r) {
+  color: #475569 !important;
+}
+#btn_tab_form:not(.bg-gradient-to-r):hover, #btn_tab_preview:not(.bg-gradient-to-r):hover {
+  color: #0F172A !important;
+  background-color: #F1F5F9 !important;
+}
+
+/* Main form wizard side navigation & question list */
+.lg\:col-span-4.bg-slate-950\/60 {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02) !important;
+}
+
+.border-slate-900, .border-slate-800, .border-slate-700, .border-slate-750, .border-slate-755, .border-slate-901, .border-slate-905 {
+  border-color: #E2E8F0 !important;
+}
+
+/* Sidebar Nodes inside Wizard */
+button[id^="sidebar_node_"] {
+  color: #475569 !important;
+  background-color: transparent !important;
+}
+button[id^="sidebar_node_"]:hover {
+  background-color: #F1F5F9 !important;
+  color: #0F172A !important;
+}
+button[id^="sidebar_node_"].bg-amber-500\/10 {
+  background-color: rgba(255, 102, 0, 0.08) !important;
+  border: 1px solid rgba(255, 102, 0, 0.25) !important;
+  color: #EA580C !important;
+  font-weight: 600 !important;
+}
+
+/* Bottom status tip box inside left sidebar */
+.bg-slate-900\/30 {
+  background-color: #FFF7ED !important;
+  border: 1px solid #FFEDD5 !important;
+}
+.bg-slate-900\/30 span, .bg-slate-900\/30 p {
+  color: #C2410C !important;
+}
+
+/* Right Question Canvas cards */
+.lg\:col-span-8.space-y-5 .bg-slate-950\/40 {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.03) !important;
+}
+
+/* White layouts text corrections */
+.text-white, label.text-white, span.text-white, h2.text-white, h3.text-white, h4.text-white {
+  color: #0F172A !important;
+}
+
+/* Labels custom bold structure */
+label {
+  color: #334155 !important;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+}
+
+/* Form interactive inputs */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  background-color: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  color: #1E293B !important;
+  font-weight: 500 !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #FF6600 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.15) !important;
+  background-color: #FFFFFF !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #94A3B8 !important;
+}
+
+/* File Uploaders inside FormWizard */
+.bg-slate-800\/80, .bg-slate-950\/20, .bg-slate-900 {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+.p-3.bg-slate-900.border-l-4 {
+  background-color: #F8FAFC !important;
+  border-left-color: #FF6600 !important;
+  color: #475569 !important;
+}
+
+/* Override inner container cards inside stages e.g. grids/lists */
+.p-3.bg-slate-900.border.border-slate-800,
+.p-4.bg-slate-900,
+.bg-slate-900\/50,
+.bg-slate-900\/40,
+.p-3.bg-slate-900.rounded-xl,
+.p-3.bg-slate-900.rounded-lg {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+}
+
+/* Plus, Delete and Action Utility Buttons */
+button.bg-slate-800, button.bg-slate-900 {
+  background-color: #F1F5F9 !important;
+  color: #334155 !important;
+  border: 1px solid #E2E8F0 !important;
+}
+button.bg-slate-800:hover, button.bg-slate-900:hover {
+  background-color: #E2E8F0 !important;
+  color: #0F172A !important;
+}
+button.text-amber-500 {
+  color: #EA580C !important;
+}
+
+/* Main action bottom navigation elements */
+#btn_prev {
+  background-color: #FFFFFF !important;
+  color: #475569 !important;
+  border: 1px solid #CBD5E1 !important;
+}
+#btn_prev:hover {
+  background-color: #F1F5F9 !important;
+  color: #0F172A !important;
+}
+#btn_next {
+  background: linear-gradient(to right, #FF6600, #EA580C) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  box-shadow: 0 4px 10px rgba(255, 102, 0, 0.2) !important;
+}
+#btn_next:hover {
+  background: linear-gradient(to right, #E65C00, #D04F00) !important;
+  box-shadow: 0 4px 14px rgba(255, 102, 0, 0.3) !important;
+}
+
+/* Demo injections & Reload headers buttons */
+#btn_inject_demo {
+  background-color: #FFF7ED !important;
+  color: #EA580C !important;
+  border: 1px solid rgba(255, 102, 0, 0.2) !important;
+}
+#btn_inject_demo:hover {
+  background-color: #FFEDD5 !important;
+  border-color: rgba(255, 102, 0, 0.3) !important;
+}
+
+/* Right auditor report board / Sidebar checklist panel */
+.lg\:col-span-12 .lg\:col-span-8.bg-slate-950,
+.lg\:col-span-12 .lg\:col-span-4.bg-slate-950\/50,
+.lg\:col-span-8.bg-slate-950,
+.lg\:col-span-4.bg-slate-950\/50 {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.04) !important;
+}
+
+.bg-slate-900.rounded-lg.flex.gap-2 {
+  background-color: #F8FAFC !important;
+}
+.bg-slate-900.rounded-lg.flex.gap-2 .text-slate-300 {
+  color: #334155 !important;
+}
+
+/* Paper view alignment */
+.border-slate-800.rounded-xl.p-2.bg-slate-100 {
+  background-color: #F1F5F9 !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* Modal windows details */
+.fixed.inset-0.bg-black\/80, .fixed.inset-0.bg-black\/85, .fixed.inset-0.bg-black\/90 {
+  background-color: rgba(15, 23, 42, 0.6) !important;
+}
+.fixed.inset-0.bg-black\/80 .bg-slate-900,
+.fixed.inset-0.bg-black\/85 .bg-slate-900,
+.fixed.inset-0.bg-black\/90 .bg-slate-900 {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15) !important;
+  color: #334155 !important;
+}
+
+/* Text alignment in Modals */
+.fixed.inset-0.bg-black\/80 .text-white,
+.fixed.inset-0.bg-black\/85 .text-white,
+.fixed.inset-0.bg-black\/90 .text-white {
+  color: #0F172A !important;
+}
+
+.fixed.inset-0.bg-black\/80 .bg-slate-950,
+.fixed.inset-0.bg-black\/85 .bg-slate-950,
+.fixed.inset-0.bg-black\/90 .bg-slate-950 {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* Footer layout rules */
+footer.bg-slate-950, footer.bg-slate-900 {
+  background-color: #0F172A !important; /* Dark bottom standard */
+  color: #94A3B8 !important;
+  border-top: 1px solid #1E293B !important;
+}
+
+/* Progress completion header metrics and progress bar */
+.w-24.h-1.5.bg-slate-100 {
+  background-color: #E2E8F0 !important;
+}
+.bg-orange-500 {
+  background-color: #FF6600 !important;
+}
+
+/* Small labels inside tables & lists */
+.bg-amber-955, .bg-amber-950\/30 {
+  background-color: #FFF7ED !important;
+  color: #C2410C !important;
+}

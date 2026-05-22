@@ -1,0 +1,6 @@
+{
+  "name": "跨迅科技_信息收集系统",
+  "description": "用于高效收集客户申报阿里国际站金品诚企所需的全部基础信息与附件材料。支持单题单屏进度引导、草稿自动保存与恢复、IndexedDB 大文件暂存、一键生成 PDF 报告及打包 ZIP 附件等功能。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
